@@ -1,5 +1,5 @@
 {% set name = "suby" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/suby-{{ version }}.tar.gz
-  sha256: 429ffe47a6a8958f33610f7be2740434e425572fee8a1992499398c2d7cced02
+  sha256: e5972172d721fd84f48fcab9f758fac80c76b8246f263f59e4b52c28c8276406
 
 build:
   noarch: python
