@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - emptylog >=0.0.7
-    - cantok >=0.0.24
+    - emptylog >=0.0.12
+    - cantok >=0.0.36
 
 test:
   imports:
