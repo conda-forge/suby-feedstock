@@ -1,5 +1,5 @@
 {% set name = "suby" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/suby-{{ version }}.tar.gz
-  sha256: e5972172d721fd84f48fcab9f758fac80c76b8246f263f59e4b52c28c8276406
+  sha256: fdd94581b0f7169ba6451cb163dfff96bd5e83011c4f30b7335dc61e15a8d1b3
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - emptylog >=0.0.7
-    - cantok >=0.0.24
+    - emptylog >=0.0.12
+    - cantok >=0.0.36
 
 test:
   imports:
