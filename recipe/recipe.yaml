@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: suby
-  version: "0.0.6"
+  version: "0.0.7"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/suby-${{ version }}.tar.gz
-  sha256: 729901a2489ef73f0fd4cb4030bd21827eb0614866907507c70c93321e71511f
+  sha256: b1069673bedd0ae4410032f2d69ebeaa0dfb3d5f324964d7cf8fc73e5f433945
 
 build:
   number: 0
