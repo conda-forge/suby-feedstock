@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - emptylog >=0.0.12
-    - cantok >=0.0.40
+    - cantok >=0.0.42
     - microbenchmark >=0.0.3
     - sigmatch >=0.0.10
 
